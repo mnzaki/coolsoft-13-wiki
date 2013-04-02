@@ -1,5 +1,5 @@
 # Database Amendment/Modification Protocol
-## Steps to add push migrations to master:
+## Steps to add migrations to master:
 
 1) Make a branch from latest version of master with the same name as the branch you are working on, but adding "migrations" to it.       
          For example:    
