@@ -6,11 +6,11 @@
 2. `bundle install`
 3. `rails generate bootstrap:install static`
 
-**Try it on your model: **
+**Try it on your model:**
 
-`rails g scaffold Post title:string description:text
-rake db:migrate
-rails g bootstrap:themed Posts`
+`rails g scaffold Post title:string description:text`
+`rake db:migrate`
+`rails g bootstrap:themed Posts`
 
 ### Very Useful links : 
 
