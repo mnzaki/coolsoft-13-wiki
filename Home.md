@@ -3,6 +3,8 @@ This is our wiki! A place to share the knowledge and document our efforts. So ed
 
 ## Index
 * [[Setting Up]]
+* [[Configuring Your Environment]]
 * [[Conventions And Guidelines]]
 * [[Migrations]]
 * [[Git CheatSheet]]
+* [[Learning Resources]]
