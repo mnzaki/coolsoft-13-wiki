@@ -9,7 +9,9 @@
 **Try it on your model:**
 
 `rails g scaffold Post title:string description:text`
+
 `rake db:migrate`
+
 `rails g bootstrap:themed Posts`
 
 ### Very Useful links : 
