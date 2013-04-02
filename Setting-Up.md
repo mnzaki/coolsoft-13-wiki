@@ -1,6 +1,6 @@
 Somethings need a bit of setup before they can work properly:
-* [Paperclip](setting-up#paperclip)
-* [Solr](setting-up#solr)
+* [Paperclip](Setting-Up#paperclip)
+* [Solr](Setting-Up#solr)
 
 ## Paperclip
 FIXME
