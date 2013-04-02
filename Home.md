@@ -2,5 +2,5 @@
 This is our wiki! A place to share the knowledge and document our efforts. So edit away!
 
 ## Index
-* [Setting Up](setting-up)
-* [Migrations](migrations)
+* [[Setting Up]]
+* [[Migrations]]
