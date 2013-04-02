@@ -29,7 +29,7 @@
 ### Code
 FIXME
 ### Scenario
-[Checkout](Git-CheatSheet) the branch you want to review. Open the Backlog. Try each success and failure scenario. If something is missing not functioning as outlined in the backlog, tell the developer.
+[Checkout](Git-CheatSheet#pull-other-branches) the branch you want to review. Open the Backlog. Try each success and failure scenario. If something is missing not functioning as outlined in the backlog, tell the developer.
 ### Tests
 FIXME
 ### Documentation
