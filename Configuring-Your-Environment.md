@@ -1,4 +1,5 @@
 ### Git
+Some basics:
 ```sh
 # set your name and email
 git config --global user.name "Mina Nagy"
@@ -9,9 +10,26 @@ git config --global color.diff auto
 git config --global color.status auto
 git config --global color.interactive auto
 git config --global color.branch auto
-# FIXME
+```
+Set your editor (the text editor that pops up when you `git commit`)  
+For Ubuntu:
+```sh
+git config --global core.editor "gedit --standalone"
 ```
 
+For Mac:
+FIXME
+
+For Windows:
+FIXME
+
+### Sublime
+To not mess up your console when you copy and paste code from sublime you need to set it to use only unix line endings. To do this, edit the default settings (from the Preference Menu -> Settings Default)
+Ctrl-f and find "default_line_ending" and change it to this:
+```
+"default_line_ending": "unix",
+```
+ 
 ## Ubuntu
 If you are clever enough to realize that life is much easier dealing with ruby and rails and development in general on Ubuntu, then kudos! And here's a few things you will want to set up after you install Ubuntu (specially if through wubi!)
 
