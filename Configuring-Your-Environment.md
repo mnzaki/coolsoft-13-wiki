@@ -21,7 +21,11 @@ For Mac:
 FIXME
 
 For Windows:
-FIXME
+#To configure sublime as your editor:
+```
+git config --global core.editor "'C:/Program Files/Sublime Text 2/sublime_text.exe' -multiInst -notabbar -nosession -noPlugin -w"
+```
+Make sure to edit the path to match the path that exists on your computer.
 
 ### Sublime
 To not mess up your console when you copy and paste code from sublime you need to set it to use only unix line endings. To do this, edit the default settings (from the Preference Menu -> Settings Default)
