@@ -21,9 +21,15 @@ For Mac:
 FIXME
 
 For Windows:
-#To configure sublime as your editor:
+###To configure Sublime as your editor:
 ```
 git config --global core.editor "'C:/Program Files/Sublime Text 2/sublime_text.exe' -multiInst -notabbar -nosession -noPlugin -w"
+```
+Make sure to edit the path to match the path that exists on your computer.
+
+###To configure Notepad++ as your editor:
+```
+git config --global core.editor "'C:/Program Files(x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
 ```
 Make sure to edit the path to match the path that exists on your computer.
 
