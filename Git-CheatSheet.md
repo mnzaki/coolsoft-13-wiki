@@ -40,6 +40,9 @@ If you want to restore the file as it was in a specific commit:
 ```sh
 git checkout 39ab2094 -- path/to/file/to/restore.html
 ```
+### Merging
+FIXME
+
 ### Suppose you merged your branch with master or someone else and you want to go back i.e undo the merge:
 ```sh
 git checkout YourBranch
