@@ -7,7 +7,7 @@
 <tbody>
 <tr><td>Issue Title</td><td>S4.2: As a user story I must be completed</td></tr>
 <tr><td>Branch Names</td><td>C1_username_#42_short_title</td>
-<tr><td>UML Files</td><td>???</td></tr>
+<tr><td>UML Files</td><td>Idearator/UML/issue_42_short_title.png</td></tr>
 </tbody>
 </table>
 
