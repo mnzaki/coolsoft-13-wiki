@@ -46,6 +46,7 @@ FileUtils::cd '..' do
       end
     eos
   end
+  FileUtils.chmod(0755, '.git/hooks/pre-commit')
 
   # Change the enabled checks as you see fit.
   system('git config pre-commit.checks ' +
