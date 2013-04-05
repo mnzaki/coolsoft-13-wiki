@@ -19,7 +19,7 @@ One line description, then empty line, then long comment if needed.
 
 Example commit message:
 ```
-Change the argument list of my_cool_method.
+Issue #42, change the argument list of my_cool_method.
 
 There were unused arguments. Notice the empty line after the short description.
 This content can be as small or as big as you want. You can even skip it entirely.
