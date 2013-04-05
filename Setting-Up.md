@@ -4,7 +4,8 @@ Some things need a bit of setup before they can work properly:
 * [Database Seeds] (Setting-Up#database-seeds)
 
 ## Paperclip
-1. Go to this <http://rubydoc.info/gems/paperclip/3.4.1/frames> and install imagemagick which is compatible with your operating system.
+1. Go to <http://rubydoc.info/gems/paperclip/3.4.1/frames> and install the version of imagemagick for your operating system.
+    * For ubuntu users: `sudo apt-get install imagemagick` as usual
 2. In Idearator/config/environments/development.rb
    * For Windows: `Paperclip.options[:command_path] = "C:\Program Files (x86)\ImageMagick-6.8.4-Q16"`
    * For Linux: `Paperclip.options[:command_path] = "/usr/local/bin/"`
