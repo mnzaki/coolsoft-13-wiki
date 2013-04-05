@@ -6,9 +6,11 @@ Some things need a bit of setup before they can work properly:
 ## Paperclip
 1)Go to this "http://rubydoc.info/gems/paperclip/3.4.1/frames"
 and install imagemagick which is compatible with your operating system.
+
 2) write in Idearator/config/environments/development.rb 
    a)For Windows:Paperclip.options[:command_path] = "C:\Program Files (x86)\ImageMagick-6.8.4-Q16"
    b)For Linux:Paperclip.options[:command_path] = "/usr/local/bin/"
+
 3)bundle install
 
 ## Solr
