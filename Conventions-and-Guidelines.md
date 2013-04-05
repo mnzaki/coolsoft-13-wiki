@@ -21,7 +21,7 @@
 Rubocop is the style checker that we use. Sometimes its error messages are not very clear.
 
 * Prefer single-quoted strings when you don't need string interpolation or special symbols.  
-  This means use single quotes 'like this' if you don't use any escapes (like \n) or inline code (using `#{}`) or other things inside your string. If you need those, then you should use double quotes "like this"
+  This means use single quotes `'like this'` if you don't use any escapes (like `\n`) or inline code (using `#{}`) or other things inside your string. If you need those, then you should use double quotes `"like this"`
 
 * Trailing whitespace detected.  
   This means there is whitespace at the end of your line. For example: `"end         "`
