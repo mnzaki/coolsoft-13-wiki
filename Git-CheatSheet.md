@@ -1,4 +1,4 @@
-### Commit Workflow
+## Commit Workflow
 It is very important that you make your commits as you work. Commit every atomic piece of work separately and DO NOT just make one huge commit at the end.
 
 ```sh
@@ -18,7 +18,7 @@ git status
 git commit -m "Your commit message here"
 ```
 
-### Pull Other Branches
+## Pull Other Branches
 If it's the first time to pull this branch you have to fetch the remote branch first:
 ```sh
 git fetch
@@ -31,7 +31,7 @@ To update the branch after there have been new commits pushed to it, check it ou
 ```sh
 git pull origin BranchNameHere
 ```
-### Undoing Your Changes
+## Undoing Your Changes
 If you made local changes and you wish to discard them (that is, restore the file from the repository):
 ```sh
 git checkout path/to/file/to/restore.html
@@ -40,28 +40,33 @@ If you want to restore the file as it was in a specific commit:
 ```sh
 git checkout 39ab2094 -- path/to/file/to/restore.html
 ```
-### Merging
+## Merging
 FIXME
 
-### Suppose you merged your branch with master or someone else and you want to go back i.e undo the merge:
+## Reverting a merge:
 ```sh
 git checkout YourBranch
 git log 
+```
 
-#You Should see something like this
-#Notice there is the commit hash and 2 merge hashes one for your branch and the other the merged branch
+You Should see something like this
+Notice there is the commit hash and 2 merge hashes one for your branch and the other the merged branch
+```sh
 commit f0a5726f655c1679d7cebd831af97ff8b30f2e78
 Merge: 966b8b1 669d292
 Author: mohammad-abdulkhaliq <mohammad28march1993@gmail.com>
 Date:   Tue Apr 2 19:09:05 2013 +0200
 
     Merge branch 'master' into C2_mohammad-abdulkhaliq_#41_create/edit_tag_reopened
+```
 
-#Now You need to know which merge hash is yours so git log for example the first one     
+Now You need to know which merge hash is yours so git log for example the first one     
+```sh
 git log 966b8b1
+```
 
-#I see this 
-
+I see this 
+```
 Mohammads-iMac-3:Idearator mohammadabdulkhaliq$ git log 966b8b1
 commit 966b8b1ac4391d894397b508dd597de222b4be43
 Author: mohammad-abdulkhaliq <mohammad28march1993@gmail.com>
@@ -76,14 +81,17 @@ Author: mohammad-abdulkhaliq <mohammad28march1993@gmail.com>
 Date:   Fri Mar 29 14:14:10 2013 +0200
 
     Issue #41 Indent fixes and Updated UML folder
-
-#Ok definitely my branch let's revert the merge now 
-#As I know the first hash is for my branch I write 1 after git revert -m then the commit hash itself
-git revert -m 1 f0a5726f655c1679d7cebd831af97ff8b30f2e78
-
-#Success should get now a revert merge commit message in your editor just save and quit 
-git log
-#Do another git log to make sure you have reverted the merge
 ```
-### More Stuff
+
+Ok definitely my branch let's revert the merge now 
+As I know the first hash is for my branch I write 1 after git revert -m then the commit hash itself
+```sh
+git revert -m 1 f0a5726f655c1679d7cebd831af97ff8b30f2e78
+```
+
+Success should get now a revert merge commit message in your editor just save and quit 
+
+Do another git log to make sure you have reverted the merge
+
+## More Stuff
 To be extended. EXTENDME!
