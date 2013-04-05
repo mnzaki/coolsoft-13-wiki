@@ -51,7 +51,7 @@ git log
 
 You Should see something like this
 Notice there is the commit hash and 2 merge hashes one for your branch and the other the merged branch
-```sh
+```
 commit f0a5726f655c1679d7cebd831af97ff8b30f2e78
 Merge: 966b8b1 669d292
 Author: mohammad-abdulkhaliq <mohammad28march1993@gmail.com>
