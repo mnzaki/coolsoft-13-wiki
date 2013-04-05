@@ -11,6 +11,11 @@
 </tbody>
 </table>
 
+## Code formatting
+* No tabs! Set your editor to replace tabs with spaces.
+* Each tab/indent is 2 spaces.
+* snake_case_like_this for methods and variables
+* CamelCaseLikeThis for classes and modules
 
 ## Text formating
 * No spaces before punctuation (dots, commas, semicolon)
