@@ -62,3 +62,4 @@ Finally, you need a `.rubocop.yml` file at the base of your git repo. This will 
 
 An example `.rubocop.yml` file (with some annoying checks turned off) can be found [here](https://raw.github.com/DevYah/coolsoft-13/master/.rubocop.yml)
 
+For a more friendly description of some of the `rubocop` errors, see our [conventions](https://github.com/DevYah/coolsoft-13/wiki/Conventions-and-Guidelines#common-rubocop-errors) wiki page.
