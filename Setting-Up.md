@@ -19,6 +19,8 @@ Some things need a bit of setup before they can work properly:
    1.Go to this <http://rubydoc.info/gems/paperclip/3.4.1/frames> and install imagemagick.
    2.In Idearator/config/environments/development.rb
        *  Paperclip.options[:command_path] = "C:\Program Files (x86)\ImageMagick-6.8.4-Q16"`
+***
+
  **for linux **
 ***
 
