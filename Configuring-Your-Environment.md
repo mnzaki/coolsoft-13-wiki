@@ -12,22 +12,22 @@ git config --global color.interactive auto
 git config --global color.branch auto
 ```
 Set your editor (the text editor that pops up when you `git commit`)  
-For Ubuntu:
+#### For Ubuntu:
 ```sh
 git config --global core.editor "gedit --standalone"
 ```
 
-For Mac:
+#### For Mac:
 FIXME
 
-For Windows:
-###To configure Sublime as your editor:
+#### For Windows:
+To configure Sublime as your editor:
 ```
 git config --global core.editor "'C:/Program Files/Sublime Text 2/sublime_text.exe' -multiInst -notabbar -nosession -noPlugin -w"
 ```
 Make sure to edit the path to match the path that exists on your computer.
 
-###To configure Notepad++ as your editor:
+To configure Notepad++ as your editor:
 ```
 git config --global core.editor "'C:/Program Files(x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
 ```
