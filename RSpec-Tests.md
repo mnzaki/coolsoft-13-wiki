@@ -1,8 +1,7 @@
 # RSpec gems installing
-1. First merge the latest master to your branch, as it contains, in the Gemfile and Gemfile.lock, the gems needed for RSpec.
-2. When you pull the master and merge it, you'll probably need to bundle install.
+1. Make sure you [merge](https://github.com/DevYah/coolsoft-13/wiki/Git-CheatSheet#merging) the latest master as it contains the gems needed for RSpec.
 3. Now you need to type "rails generate rspec:install" in the terminal. This generates the .rspec file and spec folder, where all your test files be placed.
-4. Now you're ready to follow these guides, "ESPECIALLY LAST TWO," in order to write your test files successfully =D
+4. Now you're ready to follow these guides, **especially the last two**, in order to write your test files successfully
   * [RSpec-core](http://rubydoc.info/gems/rspec-core/frames)
   * [RSpec-expectations](http://rubydoc.info/gems/rspec-expectations/frames)
   * [RSpec-mocks](http://rubydoc.info/gems/rspec-mocks/frames)
@@ -12,7 +11,7 @@
 ## Here's a simple demo
 This demo doesn't mean you ignore the links! ;)
 If you want to test for example deleting something from table "Table":
-
+```ruby
     describe TableController do
       describe 'DELETE destroy' do
         it "redirects to root" do
@@ -23,3 +22,4 @@ If you want to test for example deleting something from table "Table":
         end
       end
     end
+```
