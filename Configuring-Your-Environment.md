@@ -23,13 +23,13 @@ FIXME
 #### For Windows:
 To configure Sublime as your editor:
 ```
-git config --global core.editor "'C:/Program Files/Sublime Text 2/sublime_text.exe' -multiInst -notabbar -nosession -noPlugin -w"
+git config --global core.editor "'C:/Program Files/Sublime Text 2/sublime_text.exe' -w"
 ```
 Make sure to edit the path to match the path that exists on your computer.
 
 To configure Notepad++ as your editor:
 ```
-git config --global core.editor "'C:/Program Files(x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
+git config --global core.editor "'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
 ```
 Make sure to edit the path to match the path that exists on your computer.
 
