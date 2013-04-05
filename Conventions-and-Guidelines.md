@@ -11,6 +11,21 @@
 </tbody>
 </table>
 
+## Commit Messages
+Use infinitives like 'Change', 'Modify', 'Add'
+Don't use 'Changes', 'Changed', 'Adds', 'Addedd', etc
+
+One line description, then empty line, then long comment if needed.
+
+Example commit message:
+```
+Change the argument list of my_cool_method.
+
+There were unused arguments. Notice the empty line after the short description.
+This content can be as small or as big as you want. You can even skip it entirely.
+But the short description in one line is very important.
+```
+ 
 ## Code Style
 * No tabs! Set your editor to replace tabs with spaces.
 * Each tab/indent is 2 spaces.
