@@ -19,7 +19,7 @@ Some things need a bit of setup before they can work properly:
        * Paperclip.options[:command_path] = "C:\Program Files (x86)\ImageMagick-6.8.4-Q16"`
  
 
-****for linux ****
+**for linux**
 
    1.download from synaptic "imagemagick-common"
 
