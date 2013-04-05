@@ -12,10 +12,10 @@
 </table>
 
 ## Commit Messages
-Use infinitives like 'Change', 'Modify', 'Add'
+Use infinitives like 'Change', 'Modify', 'Add'  
 Don't use 'Changes', 'Changed', 'Adds', 'Addedd', etc
 
-One line description, then empty line, then long comment if needed.
+One line description, then empty line, then long comment if needed. The only way to add a long description is to [set up your git editor.](https://github.com/DevYah/coolsoft-13/wiki/Configuring-Your-Environment#git)
 
 Example commit message:
 ```
