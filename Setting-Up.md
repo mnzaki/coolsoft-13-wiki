@@ -1,6 +1,7 @@
 Some things need a bit of setup before they can work properly:
 * [Paperclip](Setting-Up#paperclip)
 * [Solr](Setting-Up#solr)
+* [Database Seeds] (Setting-Up#database_seeds)
 
 ## Paperclip
 FIXME
