@@ -18,8 +18,15 @@ Some things need a bit of setup before they can work properly:
    2. In `Idearator/config/environments/development.rb`  
        `Paperclip.options[:command_path] = "/usr/local/bin/"`
 
-## Solr
-FIXME
+## Sunspot with solr
+**1st Step:**
+ bundle install 
+**2nd Step:(wait till you see the command stating that a connection has been achieved)**
+ rake sunspot:solr:run 
+**3rd Step:(In another terminal tab)**
+ rails s
+
+Now you're done !!!
 
 ## Database Seeds
 ###What is the seeds.rb file?
