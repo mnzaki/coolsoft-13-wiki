@@ -108,7 +108,7 @@ If you want to keep the file:
 git checkout HEAD Idearator/db/schema.rb
 git add Idearator/db/schema.rb
 ```
-If you want to delete the file, like should be the case for this specific example (schema.rb):
+If you want to delete the file, like should be the case for this specific example (schema.rb), it depends on what the exact message is. If it said `Removing Idearator/db/schema.rb` then you don't need to do anything. But it actually did not remove it in our example (see the messages above! It says `left in tree` at the end), so you need to tell git to remove it:
 ```
 git rm Idearator/db/schema.rb
 ```
