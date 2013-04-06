@@ -16,6 +16,10 @@ Set your editor (the text editor that pops up when you `git commit`)
 ```sh
 git config --global core.editor "gedit --standalone"
 ```
+#####Sublime:
+```sh
+git config --global core.editor "subl -n -w"
+```
 
 #### For Mac:
 FIXME
