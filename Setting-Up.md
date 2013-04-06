@@ -4,30 +4,17 @@ Some things need a bit of setup before they can work properly:
 * [Database Seeds] (Setting-Up#database-seeds)
 
 ## Paperclip
-
-***
-1)bundle install.
-
-2)Install Imagemagick.
-
-**for windows**
-
-   1.Go to this <http://rubydoc.info/gems/paperclip/3.4.1/frames> and install imagemagick.
-
-   2.In Idearator/config/environments/development.rb
-
-       * Paperclip.options[:command_path] = "C:\Program Files (x86)\ImageMagick-6.8.4-Q16"`
+1. `bundle install` if you haven't after your last merge
+2. Install Imagemagick.
+**For Windows**
+   1. Go to <http://rubydoc.info/gems/paperclip/3.4.1/frames> and install imagemagick.
+   2. In `Idearator/config/environments/development.rb`  
+       `Paperclip.options[:command_path] = "C:\Program Files (x86)\ImageMagick-6.8.4-Q16"`
  
-
-**for linux**
-
-   1.download from synaptic "imagemagick-common"
-
-   2.In Idearator/config/environments/development.rb
-
-       * Paperclip.options[:command_path] = "/usr/local/bin/"
-
-***
+**For Linux**
+   1. Install through synaptic the packages `imagemagick-common` and `imagemagick`
+   2. In `Idearator/config/environments/development.rb`  
+       `Paperclip.options[:command_path] = "/usr/local/bin/"`
 
 ## Solr
 FIXME
