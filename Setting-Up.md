@@ -5,7 +5,8 @@ Some things need a bit of setup before they can work properly:
 
 ## Paperclip
 1. `bundle install` if you haven't after your last merge
-2. Install Imagemagick.
+2. Install Imagemagick.  
+
 **For Windows**
    1. Go to <http://rubydoc.info/gems/paperclip/3.4.1/frames> and install imagemagick.
    2. In `Idearator/config/environments/development.rb`  
