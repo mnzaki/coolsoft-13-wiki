@@ -18,7 +18,7 @@ So in your Gemfile, specifically in the test and development groups, you need th
 ```
 group :test, :development do
   gem 'pre-commit', :git => 'https://github.com/mnzaki/pre-commit.git'
-  gem 'rubocop'
+  gem 'rubocop', :git => 'https://github.com/bbatsov/rubocop.git'
 end
 ```
 
