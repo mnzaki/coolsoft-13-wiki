@@ -173,10 +173,14 @@ As I know the first hash is for my branch I write 1 after git revert -m then the
 ```sh
 git revert -m 1 f0a5726f655c1679d7cebd831af97ff8b30f2e78
 ```
+Success! You should now be seeing a revert merge commit message in your favorite editor. Save, quit, and you're done. 
 
-Success should get now a revert merge commit message in your editor just save and quit 
+Now `git log` again and bask in the beauty of your work.
 
-Do another git log to make sure you have reverted the merge
+**Hint**: the first branch in the `Merge 966b8b1 669d292` statement is the branch you were ON while merging, while the second branch is the branch you pulled and merged. So in most cases, you probably want to bring back the branch you were on, which means `-m 1`. In other words, if you are unsure, just use `-m 1`.
 
 ## More Stuff
 To be extended. EXTENDME!
+reflog?
+reset?
+rebase?????
