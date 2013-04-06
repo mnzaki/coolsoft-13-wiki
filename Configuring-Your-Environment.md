@@ -16,22 +16,30 @@ Set your editor (the text editor that pops up when you `git commit`)
 ```sh
 git config --global core.editor "gedit --standalone"
 ```
-#####Sublime:
+**Sublime**:
 ```sh
 git config --global core.editor "subl -n -w"
 ```
 
 #### For Mac:
-FIXME
+**Sublime**:  
+```sh
+git config --global core.editor "'/Applications/Sublime Text 2.app/Contents/MacOS/Sublime Text 2' -w"
+```
+**Nano**:  
+```sh
+git config --global core.editor nano
+```
+To use nano, just edit text normally, then exit by pressing `Ctrl-X`, it will ask you to save, press `Y`, it will ask for a filename, press `Enter`
 
 #### For Windows:
-To configure Sublime as your editor:
+**Sublime**:  
 ```
 git config --global core.editor "'C:/Program Files/Sublime Text 2/sublime_text.exe' -w"
 ```
 Make sure to edit the path to match the path that exists on your computer.
 
-To configure Notepad++ as your editor:
+**Notepad++**:  
 ```
 git config --global core.editor "'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
 ```
