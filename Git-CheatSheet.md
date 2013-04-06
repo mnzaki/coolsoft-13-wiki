@@ -4,8 +4,9 @@ It is very important that you make your commits as you work. Commit every atomic
 ```sh
 # See what has changed
 git status
-# Add/remove files to the staging area
+# Add files and changes to the staging area
 git add some/thing/here.js
+# Delete a file? Note, this means delete it and when committing, commit the fact that it has been deleted.
 git rm that/other/thing/there.js
 # IMPORTANT see what you are about to commit
 git status
