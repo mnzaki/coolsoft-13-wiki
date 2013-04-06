@@ -2,6 +2,7 @@ Some things need a bit of setup before they can work properly:
 * [Paperclip](Setting-Up#paperclip)
 * [Solr](Setting-Up#solr)
 * [Database Seeds] (Setting-Up#database-seeds)
+* [Faker](Setting-Up#faker)
 
 ## Paperclip
 1. `bundle install` if you haven't after your last merge
@@ -49,3 +50,13 @@ password : 123123123
 email : marwaelcommittee@gmail.com
 password : 123123123
 ```
+
+##Faker
+1. Bundle install after merging with master to install Faker gem.
+2. run "rake db:populate" and you are done.
+
+###What is Faker?
+Faker is a gem that helps generate fake names,emails, addresses, etc.
+
+###What does populate.rake do exactly?
+Populate.rake is a task that inserts records into Users,Ideas and IdeasTags. It inserts 50 users with the password "123123123" and randomly generated emails. It also inserts 50 ideas with 3 tags each and a random number of votes(1 to 500). 
