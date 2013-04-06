@@ -41,9 +41,21 @@ If you want to restore the file as it was in a specific commit:
 git checkout 39ab2094 -- path/to/file/to/restore.html
 ```
 ## Merging
+Sometimes you need to merge `master` (to make a pull request mergeable, or get the latest changes) or someone else's branch (to integrate with someone's code for example)
+
+First you need to pull the branch in question as outlined [above](git-cheatsheet#pull-other-branches)
+
+Then you checkout your own branch and git merge like so:
+```sh
+git merge BranchInQuestion
+```
+At this point you may face conflicts. Take a deep breath. Do not panic.
+
+### Resolving Conflicts
 FIXME
 
-## Reverting a merge:
+
+## Reverting a merge
 ```sh
 git checkout YourBranch
 git log 
