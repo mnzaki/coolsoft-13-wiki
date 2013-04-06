@@ -13,10 +13,15 @@ git config --global color.branch auto
 ```
 Set your editor (the text editor that pops up when you `git commit`)  
 #### For Ubuntu:
+**Nano**:  
+```sh
+git config --global core.editor nano
+```
+**GEdit**:  
 ```sh
 git config --global core.editor "gedit --standalone"
 ```
-**Sublime**:
+**Sublime**:  
 ```sh
 git config --global core.editor "subl -n -w"
 ```
