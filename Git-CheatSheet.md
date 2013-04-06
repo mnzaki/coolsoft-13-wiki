@@ -51,9 +51,82 @@ git merge BranchInQuestion
 ```
 At this point you may face conflicts. Take a deep breath. Do not panic.
 
-### Resolving Conflicts
-FIXME
+## Resolving Conflicts
+So you just tried to merge a branch and git told you hurtful things like:
+```
+CONFLICT (add/add): Merge conflict in Idearator/test/functional/home_controller_test.rb
+CONFLICT (modify/delete): Idearator/db/schema.rb deleted in HEAD and modified in C1_mennaamr_#91_Facebook_login. Version C1_mennaamr_#91_Facebook_login of Idearator/db/schema.rb left in tree.
+Removing Idearator/db/migrate/20130326183608_add_devise_to_users.rb
+......
+```
+These are the dreaded **CONFLICTS**.
 
+Conflict resolution is simple as long as you are careful. You **have to** take care of each message before git will allow you to commit.
+
+There are two major kinds of conflicts, those that introduce conflicting modifications and those that delete files altogether (DO NOT IGNORE THESE!).
+
+### Type 1
+Examples for the first kind:
+```
+CONFLICT (add/add): Merge conflict in Idearator/test/functional/home_controller_test.rb
+CONFLICT (content): Merge conflict in Idearator/app/views/layouts/application.html.erb
+```
+To resolve this kind of conflict you must open the file in question, then find the parts that are marked to be in conflict like so:
+```ruby
+require 'test_helper'
+
+class HomeControllerTest < ActionController::TestCase
+<<<<<<< HEAD
+  # test "the truth" do
+  #   assert true
+  # end
+=======
+  test "should get index" do
+    get :index
+    assert_response :success
+  end
+
+>>>>>>> C1_mennaamr_#91_Facebook_login
+end
+```
+The part between `<<<<<<< HEAD` and `=======` is the change that you introduced, while the part between `=======` and `>>>>>>> C1_mennaamr_#91_Facebook_login` is the change that the branch you are merging introduced. 
+
+You should now see which version you want to keep (possibly a mix of the two!) and delete the merge markers (the `>>>>>>> .....` and `=======` etc)
+
+Save the file. `git add` the file. Move to the next conflict.
+
+### Type 2
+Examples for the second kind:
+```
+CONFLICT (modify/delete): Idearator/db/schema.rb deleted in HEAD and modified in C1_mennaamr_#91_Facebook_login. Version C1_mennaamr_#91_Facebook_login of Idearator/db/schema.rb left in tree.
+Removing Idearator/db/migrate/20130326183608_add_devise_to_users.rb
+```
+As the message says, the `HEAD` ref(erence) (that is, your branch) has deleted this file, while the branch you are merging has modified or kept it. You need to make a choice.
+
+If you want to keep the file:
+```
+git checkout HEAD Idearator/db/schema.rb
+git add Idearator/db/schema.rb
+```
+If you want to delete the file, like should be the case for this specific example (schema.rb):
+```
+git rm Idearator/db/schema.rb
+```
+
+Do NOT skip these conflicts as these WILL lead to mysterious deleted files later on.
+
+Move to the next conflict.
+
+### That's it!
+You're golden. See? Told you it was simple. Now once you have dealt with **ALL** the conflict messages just go ahead and `git commit`; preferably without using the `-m` option so that git adds the default merge commit message. And remember, you need to [setup your git editor](https://github.com/DevYah/coolsoft-13/wiki/Configuring-Your-Environment#git) lest you get stuck in vim forever.
+
+If you need to see what's still in conflict at any point just use our trusty `git status`
+
+## Aborting a merge
+If you tried to merge and changed your mind:
+```
+git merge --abort
+```
 
 ## Reverting a merge
 ```sh
