@@ -19,12 +19,20 @@ Some things need a bit of setup before they can work properly:
        `Paperclip.options[:command_path] = "/usr/local/bin/"`
 
 ## Sunspot with solr
-**1st Step:**
- bundle install 
-**2nd Step:(wait till you see the command stating that a connection has been achieved)**
- rake sunspot:solr:run 
-**3rd Step:(In another terminal tab)**
- rails s
+**1st Step:**                                                                                                                       
+`bundle install`
+***
+**2nd Step:**                                                                                                             
+`rake db:migrate`
+***
+
+**3rd Step:**                                            
+`rake sunspot:solr:run`
+***
+ 
+**4th Step:(wait till you see the command stating that a connection has been achieved then In another terminal tab)**                                                                                   
+`rails s`
+***
 
 Now you're done !!!
 
