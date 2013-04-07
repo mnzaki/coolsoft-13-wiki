@@ -1,3 +1,18 @@
+### GUC Proxy Setup
+For Ubuntu users, and users of Git Bash, you can create a nice little Bash function. Open a **new** shell window, then:
+```sh
+# use your favorite editor to open .bashrc
+gedit .bashrc
+```
+Now add this to `.bashrc` but change the username and password below
+```sh
+function gucproxy {
+  export http_proxy=your.guc.username:yourGUCpassword@50.0.0.5:8080
+  export https_proxy=$http_proxy
+}
+```
+Now save the file and close the shell. In any *new* shell you open, there will now be a command called `gucproxy` which you can call and it will set the proxy for the current shell, and for the current shell *only*.
+
 ### Git
 Some basics:
 ```sh
