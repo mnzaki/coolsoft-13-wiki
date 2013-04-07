@@ -7,7 +7,7 @@ gedit .bashrc
 Now add this to `.bashrc` but change the username and password below
 ```sh
 function gucproxy {
-  export http_proxy=your.guc.username:yourGUCpassword@50.0.0.5:8080
+  export http_proxy=http://your.guc.username:yourGUCpassword@50.0.0.5:8080
   export https_proxy=$http_proxy
 }
 ```
@@ -75,29 +75,43 @@ Ctrl-f and find "default_line_ending" and change it to this:
 ## Ubuntu
 If you are clever enough to realize that life is much easier dealing with ruby and rails and development in general on Ubuntu, then kudos! And here's a few things you will want to set up after you install Ubuntu (specially if through wubi!)
 
+### GUC Proxy for GUI programs
+1. Open the dash (press the windows button) and type `Network` and click on the network settings.  
+2. Click on the `Network Proxy` settings
+3. Change the Method from `None` to `Manual`
+4. In the `HTTP Proxy` setting, type `your.guc.login:yourGUCpassword@50.0.0.5` and set the `Port` to 8080
+5. Do the same for the `HTTPS Proxy` setting
+This will set the proxy for Chrome, Firefox, etc
+
+### GUC Proxy in the terminal
+Before you do any of the setup below, follow the instructions for exporting the proxy variable as shown [above](configuring-your-environment#guc-proxy-setup)
+Now close the terminal and open it again, then run `gucproxy` to export the proxy in this terminal session.
+
+(Note below how we use `sudo -E` instead of just `sudo`. The `-E` param passes the environment (which includes the proxy settings) to `sudo`)
+
 ### Update the repos, setup x86 libraries, install java (we need it for solr!)
 ```sh
 sudo dpkg --add-architecture i386
-sudo apt-get update
-sudo apt-get install ia32-libs
-sudo apt-get install default-jre
+sudo -E apt-get update
+sudo -E apt-get install ia32-libs
+sudo -E apt-get install default-jre
 ```
 ### Install synaptic package manager and some utilites
 ```sh
-sudo apt-get install synaptic vim htop curl
+sudo -E apt-get install synaptic vim htop curl
 ```
 ### Install git, rails3
 ```sh
-sudo apt-get install git rails3
+sudo -E apt-get install git rails3
 ```
 ### Install sublime
 ```sh
 sudo add-apt-repository ppa:webupd8team/sublime-text-2
-sudo apt-get update
-sudo apt-get install sublime-text
+sudo -E apt-get update
+sudo -E apt-get install sublime-text
 ```
 ### Install skype
 Open the dash (press the windows button on your keyboard) and search for "Software Sources". Click the "Other Software" tab, and from there check the "Canonical Partners" repository. Now in a terminal:
 ```sh
-sudo apt-get install skype skype-bin
+sudo -E apt-get install skype skype-bin
 ```
