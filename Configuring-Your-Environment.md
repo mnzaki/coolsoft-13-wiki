@@ -81,6 +81,7 @@ If you are clever enough to realize that life is much easier dealing with ruby a
 3. Change the Method from `None` to `Manual`
 4. In the `HTTP Proxy` setting, type `your.guc.login:yourGUCpassword@50.0.0.5` and set the `Port` to 8080
 5. Do the same for the `HTTPS Proxy` setting
+
 This will set the proxy for Chrome, Firefox, etc
 
 ### GUC Proxy in the terminal
