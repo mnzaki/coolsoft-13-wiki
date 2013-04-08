@@ -7,6 +7,7 @@ If you need to override something in the defined bootstrap classes, do so in the
 **Navbar**
 
 If you want to display anything in the navigation bar, add it in `_navigation.html.erb` in `views/Layouts`
+
 **Sidebar**
 
 If you want to render your view in sidebar , add before your desired `div` `<% content_for :sidebar do %><div></div><%end%>`  
