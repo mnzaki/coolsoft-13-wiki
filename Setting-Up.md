@@ -18,6 +18,14 @@ Some things need a bit of setup before they can work properly:
    2. In `Idearator/config/environments/development.rb`  
        `Paperclip.options[:command_path] = "/usr/local/bin/"`
 
+**Common error**`
+Check that the migration is there UploadImage.
+Check that it is migrates,you will find in schema some attributes for the `photopath`,`size`
+***
+Check in Model :- `has_attached_file :photo, :styles => { :small => '60x60>', :medium => "300x300>",:thumb => '10x10!' }, :default_url => '/images/:style/missing.png' `
+You have list of styles `small`,`medium` and `thumb`
+Make sure that in your view that you have a style that exists `<%= image_tag @idea.photo.url(:medium) %`
+
 ## Sunspot with solr
 **1st Step:**                                                                                                                       
 `bundle install`
