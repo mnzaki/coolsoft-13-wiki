@@ -25,7 +25,7 @@ Check that the migration occured by finding in the schema some attributes for th
 ***
 Check in Model :- `has_attached_file :photo, :styles => { :small => '60x60>', :medium => "300x300>",:thumb => '10x10!' },:default_url =>'/images/:style/missing.png' `
 You have list of styles `small`,`medium` and `thumb`
-Make sure that in your view that you have a style that exists `<%= image_tag @idea.photo.url(:medium) %`
+Make sure that you have a style that exists in your view `<%= image_tag @idea.photo.url(:medium) %`
 
 ## Sunspot with solr
 **1st Step:**                                                                                                                       
