@@ -61,6 +61,16 @@ Rubocop is the style checker that we use. Sometimes its error messages are not v
 # Params:
 # +parameter1+:: the parameter is an instance of +Entity+ passed through ....
 # +parameter2+:: etc,...
+#
+# Author: Your Name
+```
+Params (short for parameters) should include all parameters/arguments passed to the method, and also things like `+params['username']+` for example, which is defined locally for the scope of the method but not passed as an actual argument.
+
+If there are no parameters, then your documentation should like so:
+```
+# This is what the method does, it's a very brief description of the action
+# Params: None
+# 
 # Author: Your Name
 ```
 
