@@ -70,7 +70,6 @@ If there are no parameters, then your documentation should like so:
 ```
 # This is what the method does, it's a very brief description of the action
 # Params: None
-# 
 # Author: Your Name
 ```
 
