@@ -59,8 +59,8 @@ Rubocop is the style checker that we use. Sometimes its error messages are not v
 ```
 # This is what the method does, it's a very brief description of the action
 # Params:
-# +parameter1+:: the parameter is an instance of +Entity+ passed through ....
-# +parameter2+:: etc,...
+# +parameter1+:: The parameter is an instance of +Entity+ passed through ....
+# +parameter2+:: This is another parameter.
 #
 # Author: Your Name
 ```
