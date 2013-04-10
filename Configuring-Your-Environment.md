@@ -1,5 +1,5 @@
 ### GUC Proxy Setup
-For Ubuntu users, and users of Git Bash, you can create a nice little Bash function. Open a **new** shell window, then:
+For Git Bash and Ubuntu users, you can create a nice little Bash function. Open a **new** shell window, then:
 ```sh
 # use your favorite editor to open .bashrc
 gedit .bashrc
@@ -90,29 +90,41 @@ Now close the terminal and open it again, then run `gucproxy` to export the prox
 
 (Note below how we use `sudo -E` instead of just `sudo`. The `-E` param passes the environment (which includes the proxy settings) to `sudo`)
 
-### Update the repos, setup x86 libraries, install java (we need it for solr!)
+### Update the repositories (this is **important**, do not skip it)
 ```sh
 sudo dpkg --add-architecture i386
 sudo -E apt-get update
-sudo -E apt-get install ia32-libs
-sudo -E apt-get install default-jre
 ```
+
 ### Install synaptic package manager and some utilites
 ```sh
 sudo -E apt-get install synaptic vim htop curl
 ```
-### Install git, rails3
-```sh
-sudo -E apt-get install git rails3
-```
+
 ### Install sublime
 ```sh
 sudo add-apt-repository ppa:webupd8team/sublime-text-2
 sudo -E apt-get update
 sudo -E apt-get install sublime-text
 ```
+
+### Install git, rails3
+```sh
+sudo -E apt-get install git rails3
+```
+
+### Install some commonly needed development libraries
+```sh
+sudo -E apt-get install libsqlite3-dev libxml2-dev
+```
+
+### Install java (we need it for solr!)
+```sh
+sudo -E apt-get install default-jre
+```
+
 ### Install skype
 Open the dash (press the windows button on your keyboard) and search for "Software Sources". Click the "Other Software" tab, and from there check the "Canonical Partners" repository. Now in a terminal:
 ```sh
-sudo -E apt-get install skype skype-bin
+sudo -E apt-get install ia32-libs skype skype-bin
 ```
