@@ -65,13 +65,23 @@ git config --global core.editor "'C:/Program Files (x86)/Notepad++/notepad++.exe
 ```
 Make sure to edit the path to match the path that exists on your computer.
 
-### Sublime
+### Configuring Sublime
 To not mess up your console when you copy and paste code from sublime you need to set it to use only unix line endings. To do this, edit the default settings (from the Preference Menu -> Settings Default)
 Ctrl-f and find "default_line_ending" and change it to this:
 ```
 "default_line_ending": "unix",
 ```
  
+Now Ctrl-f again and find "tab_size" and change that block to:
+```
+// The number of spaces a tab is considered equal to
+"tab_size": 2,
+
+// Set to true to insert spaces when tab is pressed
+"translate_tabs_to_spaces": true,
+```
+This sets it up to only uses spaces.
+
 ## Ubuntu
 If you are clever enough to realize that life is much easier dealing with ruby and rails and development in general on Ubuntu, then kudos! And here's a few things you will want to set up after you install Ubuntu (specially if through wubi!)
 
