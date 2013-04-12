@@ -125,7 +125,7 @@ sudo -E apt-get install git rails3
 
 ### Install some commonly needed development libraries
 ```sh
-sudo -E apt-get install libsqlite3-dev libxml2-dev
+sudo -E apt-get install libsqlite3-dev libxml2-dev libxslt-dev
 ```
 
 ### Install java (we need it for solr!)
