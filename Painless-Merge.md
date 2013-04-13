@@ -14,5 +14,5 @@ How to use :
 in the status panel view you have three kinds of files merged ,( unmerged , staged , modified ) 
     * unmerged , click right and launch merge tool
     * staged , if you are happy with the change leave it else , click right and unstage .
-    * merged , thease files were changed (modified/deleted) by merge but unstaged . to revert unstaged 
+    * modified(untracked) , thease files were changed (modified/deleted) by merge but unstaged . to revert unstaged 
     changes , simply click right and revert changes
