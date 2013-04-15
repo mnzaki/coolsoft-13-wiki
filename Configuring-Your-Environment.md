@@ -118,9 +118,9 @@ sudo -E apt-get update
 sudo -E apt-get install sublime-text
 ```
 
-### Install git, rails3
+### Install git, and merge tool meld, and rails3
 ```sh
-sudo -E apt-get install git rails3
+sudo -E apt-get install git meld rails3
 ```
 
 ### Install some commonly needed development libraries
