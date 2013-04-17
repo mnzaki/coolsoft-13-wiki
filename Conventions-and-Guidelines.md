@@ -26,34 +26,53 @@ This content can be as small or as big as you want. You can even skip it entirel
 But the short description in one line is very important.
 ```
  
-## Code Style
-* No tabs! Set your editor to replace tabs with spaces.
-* Each tab/indent is 2 spaces.
-* snake_case_like_this for methods and variables
-* CamelCaseLikeThis for classes and modules
+## Code Style and Conventions
+### Making your Editor help you
+You can setup sublime to show and fix whitespace and indentation errors by following [these](https://github.com/DevYah/coolsoft-13/wiki/Configuring-Your-Environment#configuring-sublime) dead simple instructions.
 
-### Common Rubocop Errors
-Rubocop is the style checker that we use. Sometimes its error messages are not very clear.
+### Indentation
+- Indent as you code, not as an afterthought!
+- Two spaces per indent. Absolutely NO tabs.
+- Blocks (those pesky things inside `do ... end` and `{|args| }`) need indentation too!  
+    Which means indent things inside them inwards and then as necessary!
+- DO NOT indent an entire file inwards for no reason!
 
-* Prefer single-quoted strings when you don't need string interpolation or special symbols.  
-  This means use single quotes `'like this'` if you don't use any escapes (like `\n`) or inline code (using `#{}`) or other things inside your string. If you need those, then you should use double quotes `"like this"`
+### Whitespace
+Git understands whitespace. An empty line (emphasis on *empty*; no spaces!) signifies the beginning of a new 'block' of text to git. Git can automerge blocks of text no problem. Help Git help You by separating your blocks with empty lines!
 
-* Trailing whitespace detected.  
-  This means there is whitespace at the end of your line. For example: `"end         "`
-  Remove the unnecessary whitespace.
+- One and only one empty line between method `def`initions.
+- One and only one empty line between separate 'blocks' of code inside a method.
+- NO useless spaces at the end of the line! [FOLLOW THESE INSTRUCTIONS](https://github.com/DevYah/coolsoft-13/wiki/Configuring-Your-Environment#configuring-sublime)
+- NO useless newlines at the end of the file!
+- NO spaces before a comma in an argument list  
+    `object.bad_call arg1 , arg2` is **BAD**  
+    `object.good_call arg1, arg2` is **GOOD**
+- Spaces around equal signs, comparisons, hash arrows:  
+    `this=that` `this<that` `{this:"that"}` `{:this=>"that"}` is **BAD**  
+    `this = that` `this < that` `{ this: "that" }` `{ :this => "that" }` is **GOOD**
 
-* Tab detected.  
-  Don't use tabs! Set your editor to change tabs to 2 spaces.
+### Some Ruby Style Conventions
+- snake_case_like_this for methods and variables
+- CamelCaseLikeThis for classes and modules
+- Use `unless ... end` instead of `if not ... end` except if there is an `else` branch.
+- Use `do |k, v| ... end` instead of `{|k, v| }` for multiline blocks
+- Avoid extra parentheses when calling methods, but keep them when you assign the return value.  
+    `x = Math.sin(y)` but `array.delete e`
+- Avoid unnecessary parentheses when calling or defining methods that take no arguments.  
+    `def something` instead of `def something()`
+- Prefer single-quoted strings when you don't need string interpolation or special symbols.  
+    Use single quotes `'like this'` if you don't use any escapes (like `\n`) or inline code (using `#{}`) or other escapes inside your string. If you need those, then you should use double quotes `"like this #{40+2}"` instead.
 
-* Use def with parentheses when there are arguments.  
-  Pretty clear. If you have arguments for your method, then use parentheses() when defining it with `def`
+You can read more here: https://github.com/copycopter/style-guide#ruby
 
-* Avoid using {...} for multi-line blocks  
-  If you are passing a block to something and it spans multiple lines, then use the `do |args| ... end` syntax instead of the `{ |args| ... }` sytax
+### Some Rails Style Conventions
+- Aim for skinny Controllers!
+    All business login goes into the Model. The controller should simply `find` or `create` an object, perhaps load some other data or call a Model method, then pass everything to the view.
+- Order controller contents: filters, public methods, private methods.
+- Order model contents: constants, attributes, associations, nested attributes, named scopes, validations, callbacks, public methods, private methods.
 
-## Text formating
-* No spaces before punctuation (dots, commas, semicolon)
-* Don't overuse exclamation marks!!!!!!!!
+You can read more here: https://github.com/copycopter/style-guide#rails   
+And here: https://github.com/bbatsov/rails-style-guide
 
 ## Documentation
 ```
@@ -66,7 +85,7 @@ Rubocop is the style checker that we use. Sometimes its error messages are not v
 ```
 Params (short for parameters) should include all parameters/arguments passed to the method, and also things like `+params['username']+` for example, which is defined locally for the scope of the method but not passed as an actual argument.
 
-If there are no parameters, then your documentation should like so:
+If there are no parameters, then your documentation should look like so:
 ```
 # This is what the method does, it's a very brief description of the action
 # Params: None
@@ -75,12 +94,17 @@ If there are no parameters, then your documentation should like so:
 
 ## Reviewing/Evaluation
 ### Code
-FIXME
+Read the Code Style and Conventions section above and make sure the developer has followed it closely. Your review should not be limited to just those things mentioned above.
+
 ### Scenario
-[Checkout](Git-CheatSheet#pull-other-branches) the branch you want to review. Open the Backlog. Try each success and failure scenario. If something is missing not functioning as outlined in the backlog, tell the developer.
+[Checkout](Git-CheatSheet#pull-other-branches) the branch you want to review. Open the Backlog. Try each success and failure scenario. If something is missing or not functioning as outlined in the backlog, tell the developer.
+
 ### Tests
-FIXME
+Run the tests. Make sure no tests fail, even those that don't belong to the developer you are reviewing. All tests in master should be running successfully.  
+Make sure developer has followed the test writing best practices.
+
 ### Documentation
-FIXME
+Read the Documentation writing section above and make sure the developer has followed it closely; spaces, new lines, tags (`+param+::`), etc
+
 ### UML
-FIXME
+FIXME FIXME! FIXME? :(
