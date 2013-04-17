@@ -92,8 +92,7 @@ Now `Ctrl-f` again and find "tab_size" and change that block to:
 ```
 This sets it up to only uses spaces.
 
-Now we will install and use the BeautifyRuby plugin.  
-First open a terminal and install the htmlbeautifier gem:
+Now we will install and use the BeautifyRuby plugin. First open a terminal and install the htmlbeautifier gem:
 ```
 sudo gem install htmlbeautifier
 ```
