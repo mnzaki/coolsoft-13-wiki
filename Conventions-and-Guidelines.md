@@ -92,19 +92,26 @@ If there are no parameters, then your documentation should look like so:
 # Author: Your Name
 ```
 
-## Reviewing/Evaluation
+## Reviewing Protocol
+FIXME FIXME
+
+## Reviewing Guidelines
 ### Code
-Read the Code Style and Conventions section above and make sure the developer has followed it closely. Your review should not be limited to just those things mentioned above.
+Read the [Code Style and Conventions](Conventions-and-Guidelines#code-style-and-conventions) section above and make sure the developer has followed it closely. Your review should not be limited to just those things mentioned above.
 
 ### Scenario
 [Checkout](Git-CheatSheet#pull-other-branches) the branch you want to review. Open the Backlog. Try each success and failure scenario. If something is missing or not functioning as outlined in the backlog, tell the developer.
 
 ### Tests
-Run the tests. Make sure no tests fail, even those that don't belong to the developer you are reviewing. All tests in master should be running successfully.  
-Make sure developer has followed the test writing best practices.
+Make sure developer has followed the test writing best practices.  
+Make sure they are actually testing for the return value and effects of the method.  
+Make sure they cover all branches of the method they are testing.  
+Make sure coverage is at least above 80%.  
+
+Run the tests. Make sure no tests fail, even those that don't belong to the developer you are reviewing. All tests in master should be running successfully.
 
 ### Documentation
-Read the Documentation writing section above and make sure the developer has followed it closely; spaces, new lines, tags (`+param+::`), etc
+Read the [Documentation](Conventions-and-Guidelines#documentation) writing section above and make sure the developer has followed it closely; spaces, new lines, tags (`+param+::`), etc
 
 ### UML
 FIXME FIXME! FIXME? :(
