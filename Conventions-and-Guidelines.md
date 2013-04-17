@@ -101,6 +101,8 @@ FIXME FIXME
 ### Code
 Read the [Code Style and Conventions](Conventions-and-Guidelines#code-style-and-conventions) section above and make sure the developer has followed it closely. Your review should not be limited to just those things mentioned above.
 
+Watch out for [common coding errors](https://github.com/DevYah/coolsoft-13/wiki/Common-Coding-Errors).
+
 ### Scenario
 [Checkout](Git-CheatSheet#pull-other-branches) the branch you want to review. Open the Backlog. Try each success and failure scenario. If something is missing or not functioning as outlined in the backlog, tell the developer.
 
