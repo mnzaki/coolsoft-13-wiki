@@ -94,10 +94,20 @@ If there are no parameters, then your documentation should look like so:
 # Author: Your Name
 ```
 
-## Reviewing Protocol
-FIXME FIXME
+## Reviewing
 
-## Reviewing Guidelines
+### Protocol and Policy
+1. A developer MUST tag the reviewer that is expected to review.
+1. A developer MUST, and only a developer CAN, change the issue labels to the appropriate `-pending` labels after new changes have been pushed.
+1. A reviewer is expected to have finished review after a maximum of **12 hours** from being tagged.
+1. A reviewer MAY or MAY NOT reply to a review request made **less than 6 hours** before a submission deadline.
+1. A reviewer MUST, and only a reviewer CAN, change the issue labels to the appropriate `-reopen` or `-verified` labels after finishing reviewing.
+1. All issue discussion SHOULD happen on the issue and not the pull request except for inline comments.
+1. All label changes MUST be announced in issue comments.
+
+Follow the protocol for guaranteed smooth sailing.
+
+### Reviewing Guidelines
 ### Code
 Read the [Code Style and Conventions](Conventions-and-Guidelines#code-style-and-conventions) section above and make sure the developer has followed it closely. Your review should not be limited to just those things mentioned above.
 
