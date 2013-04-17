@@ -2,8 +2,8 @@
 This is our wiki! A place to share the knowledge and document our efforts. So edit away!
 
 ## Index
-* [[Conventions And Guidelines]]  
-* [[Common Coding Errors]]
+* [[Conventions And Guidelines]]
+* [[Protocols and Policies]]
 <br /><br />
 * [[Setting Up]]
 * [[Configuring Your Environment]]
@@ -13,6 +13,7 @@ This is our wiki! A place to share the knowledge and document our efforts. So ed
 * [[Migrations]]  
 * [[Learning Resources]]
 * [[Bootstrap]]
+* [[Common Coding Errors]]
 
 ## Components and Interfaces
 * [[Notification Module]]
