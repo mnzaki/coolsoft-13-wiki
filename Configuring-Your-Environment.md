@@ -92,13 +92,13 @@ Now `Ctrl-f` again and find "tab_size" and change that block to:
 ```
 This sets it up to only uses spaces.
 
-Now we will install and use the BeutifyRuby plugin.  
+Now we will install and use the BeautifyRuby plugin.  
 First open a terminal and install the htmlbeautifier gem:
 ```
 sudo gem install htmlbeautifier
 ```
 
-Now in sublime, go to `Preferences -> Package Control`. Click on `Install Package`. Wait for it to load. Now type `BeautifyRuby` into the search and click on it when it is filtered out. Wait for it to install. Once done, restart sublime.
+Now in sublime, go to `Preferences -> Package Control`. Click on `Install Package`. Wait for it to load. Now type `BeautifyRuby` into the search box that appears and click on `BeautifyRuby` when it is filtered out. Wait for it to install (there's a progress indicator at the bottom left in the status bar). Once done, restart sublime.
 
 Now when you are editing any ruby file (including ERB!) all you have to do is press `Ctrl-Alt-k` or `Ctrl-Cmd-k` on Mac OS and all your ruby gets formatted beautifully!
 
@@ -107,6 +107,7 @@ In the Default Settings configuration again, `Ctrl-f` for `trailing_white_space`
 ```
  "trim_trailing_white_space_on_save": true,
 ```
+This will automatically remove white space from your files when you save them. You shouldn't be leaving whitespace in the first place, but lets assume you hit the spacebar by mistake.
 
 ## Ubuntu
 If you are clever enough to realize that life is much easier dealing with ruby and rails and development in general on Ubuntu, then kudos! And here's a few things you will want to set up after you install Ubuntu (specially if through wubi!)
