@@ -102,6 +102,8 @@ Now in sublime, go to `Preferences -> Package Control`. Click on `Install Packag
 
 Now when you are editing any ruby file (including ERB!) all you have to do is press `Ctrl-Alt-k` or `Ctrl-Cmd-k` on Mac OS and all your ruby gets formatted beautifully!
 
+**NOTE**: if you are on windows, look at this for setting up `BeautifyRuby` properly: https://github.com/CraigWilliams/BeautifyRuby#key-binding
+
 ### Whitespace
 In the Default Settings configuration again, `Ctrl-f` for `trailing_white_space` and make it:
 ```
