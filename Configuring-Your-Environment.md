@@ -67,8 +67,8 @@ Make sure to edit the path to match the path that exists on your computer.
 
 ## Configuring Sublime
 ### Plugins
-First you need to install Sublime Package Control. Follow the instructions [here](http://wbond.net/sublime_packages/package_control/installation) or in short:
-1. Press Ctrl-`
+First you need to install Sublime Package Control. Follow the instructions [here](http://wbond.net/sublime_packages/package_control/installation) or in short:  
+1. Press Ctrl-`  
 2. Paste this into the console that pops up and wait for it to finish and ask you to restart sublime:
 ```
 import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print("\n\n\n\n\n\n\n\n\nPlease restart Sublime Text to finish installation")
