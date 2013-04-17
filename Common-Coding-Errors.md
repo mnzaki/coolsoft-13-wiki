@@ -1,7 +1,7 @@
 ## HTML
 - All tags without a closing tag should be made self closing:  
-    `<br>` is **BAD**  
-    `<br />` is **GOOD**  
+    `<br>` `<hr>` `<input name=test>` is **BAD**  
+    `<br />` `<hr />` `<input name=test />` is **GOOD**  
     NOT doing this WILL break autoindentation.   
 
 - There should be NO spaces around `=` in tag attributes:  
