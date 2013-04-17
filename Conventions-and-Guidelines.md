@@ -27,7 +27,7 @@ But the short description in one line is very important.
 ```
  
 ## Code Style and Conventions
-<font color="#FF3636"><b>A developer asked for help or for discussion over unindented or unformatted code has the right to refuse any further discussion before code is made to comply with the standards.</b></font>
+<font color="#FF3636"><b>A developer asked for help or for discussion over unindented or unformatted code has the right to refuse ANY AND ALL further discussion before code is made to comply with the standards.</b></font>
 
 ### Making your Editor help you
 You can setup sublime to show and fix whitespace and indentation errors by following [these](https://github.com/DevYah/coolsoft-13/wiki/Configuring-Your-Environment#configuring-sublime) dead simple instructions.
