@@ -110,6 +110,8 @@ In the Default Settings configuration again, `Ctrl-f` for `trailing_white_space`
 ```
 This will automatically remove white space from your files when you save them. You shouldn't be leaving whitespace in the first place, but lets assume you hit the spacebar by mistake.
 
+Now we'll install the `TrailingSpaces` plugin which will highlight any trailing space. In sublime, go to `Preferences -> Package Control`. Click on `Install Package`. Wait for it to load. Now type `TrailingSpaces` into the search box that appears and click on `TrailingSpaces` when it is filtered out. Wait for it to install (there's a progress indicator at the bottom left in the status bar). Once done, restart sublime.
+
 ## Ubuntu
 If you are clever enough to realize that life is much easier dealing with ruby and rails and development in general on Ubuntu, then kudos! And here's a few things you will want to set up after you install Ubuntu (specially if through wubi!)
 
