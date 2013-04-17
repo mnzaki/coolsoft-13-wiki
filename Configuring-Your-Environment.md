@@ -1,4 +1,4 @@
-### GUC Proxy Setup
+## GUC Proxy Setup
 For Git Bash and Ubuntu users, you can create a nice little Bash function. Open a **new** shell window, then:
 ```sh
 # use your favorite editor to open .bashrc
@@ -13,7 +13,7 @@ function gucproxy {
 ```
 Now save the file and close the shell. In any *new* shell you open, there will now be a command called `gucproxy` which you can call and it will set the proxy for the current shell, and for the current shell *only*.
 
-### Git
+## Git
 Some basics:
 ```sh
 # set your name and email
@@ -65,14 +65,24 @@ git config --global core.editor "'C:/Program Files (x86)/Notepad++/notepad++.exe
 ```
 Make sure to edit the path to match the path that exists on your computer.
 
-### Configuring Sublime
-To not mess up your console when you copy and paste code from sublime you need to set it to use only unix line endings. To do this, edit the default settings (from the Preference Menu -> Settings Default)
-Ctrl-f and find "default_line_ending" and change it to this:
+## Configuring Sublime
+### Plugins
+First you need to install Sublime Package Control. Follow the instructions [here](http://wbond.net/sublime_packages/package_control/installation) or in short:
+1. Press Ctrl-`
+2. Paste this into the console that pops up and wait for it to finish and ask you to restart sublime:
+```
+import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print("\n\n\n\n\n\n\n\n\nPlease restart Sublime Text to finish installation")
+```
+
+### Line endings
+To not mess up your console (if you are on windows, *sigh*) when you copy and paste code from sublime you need to set it to use only unix line endings. To do this, edit the default settings (from `Preference -> Settings-Default`)
+`Ctrl-f` and find "default_line_ending" and change it to this:
 ```
 "default_line_ending": "unix",
 ```
- 
-Now Ctrl-f again and find "tab_size" and change that block to:
+
+### Indentation
+Now `Ctrl-f` again and find "tab_size" and change that block to:
 ```
 // The number of spaces a tab is considered equal to
 "tab_size": 2,
@@ -81,6 +91,22 @@ Now Ctrl-f again and find "tab_size" and change that block to:
 "translate_tabs_to_spaces": true,
 ```
 This sets it up to only uses spaces.
+
+Now we will install and use the BeutifyRuby plugin.  
+First open a terminal and install the htmlbeautifier gem:
+```
+sudo gem install htmlbeautifier
+```
+
+Now in sublime, go to `Preferences -> Package Control`. Click on `Install Package`. Wait for it to load. Now type `BeautifyRuby` into the search and click on it when it is filtered out. Wait for it to install. Once done, restart sublime.
+
+Now when you are editing any ruby file (including ERB!) all you have to do is press `Ctrl-Alt-k` or `Ctrl-Cmd-k` on Mac OS and all your ruby gets formatted beautifully!
+
+### Whitespace
+In the Default Settings configuration again, `Ctrl-f` for `trailing_white_space` and make it:
+```
+ "trim_trailing_white_space_on_save": true,
+```
 
 ## Ubuntu
 If you are clever enough to realize that life is much easier dealing with ruby and rails and development in general on Ubuntu, then kudos! And here's a few things you will want to set up after you install Ubuntu (specially if through wubi!)
