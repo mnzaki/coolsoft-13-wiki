@@ -2,12 +2,15 @@
 This is our wiki! A place to share the knowledge and document our efforts. So edit away!
 
 ## Index
+* [[Conventions And Guidelines]]  
+* [[Common Coding Errors]]
+<br /><br />
 * [[Setting Up]]
 * [[Configuring Your Environment]]
-* [[Conventions And Guidelines]]  
+<br /><br />
+* [[Git CheatSheet]]
 * [[RSpec Tests]]
 * [[Migrations]]  
-* [[Git CheatSheet]]
 * [[Learning Resources]]
 * [[Bootstrap]]
 
