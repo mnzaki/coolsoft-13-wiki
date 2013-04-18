@@ -96,12 +96,12 @@ If there are no parameters, then your documentation should look like so:
 ```
 
 ## Sequence Diagrams
-* Developers **MUST** reflect the code sequence in the Sequence Diagram.
-* Developers **MUST** be careful when the timelines end, i.e if a controller requests data from a model, then the model's timeline should end before the controller!
-* Developers **MUST** be careful when drawing ALT and OPT blocks, they should cover only **_ONE_** vertical line, i.e one model/controller/helper/view
-* Developers **MUST** follow this convention for the component names, they should be **_View_** (and **NOT** UI), **_Helper_**, **_Controller_** or **_Model_**, and the corresponding component name should be clearly mentioned, e.g Model - IdeaModel
-* Developers **MUST** draw lines/transitions between components as follows, they are either solid/dashed lines and they **_MUST_** be labeled!
-* Extending previous point, Developers **MUST** return what's actually being requested between components, i.e if an Entity instance has been requested from a model, then the instance should be returned and **NOT** some of its attributes!
+* The Sequence Diagram **MUST** reflect the code sequence.
+* Timelines are meant to show which component is working when, so be careful to end them at the right times, i.e if a controller requests data from a model, the model's timeline should end before the controller.
+* When drawing ALT and OPT blocks, you should make them cover only **_ONE_** vertical line, i.e one model/controller/helper/view.
+* As for the component names placed for every horizontal line, they should be **_View_** (and **NOT** UI), **_Helper_**, **_Controller_** or **_Model_**, and the corresponding component name **MUST** be clearly mentioned, e.g Model - IdeaModel.
+* Drawing lines/transitions between components should be as follows, they are either solid/dashed lines and they all **_MUST_** be labeled!
+* Extending previous point, the returned data must correspond to the requested ones between components, i.e if an Entity instance has been requested from a model, then the instance should be returned and **NOT** some of its attributes!
 
 ## Reviewing
 ### Code
