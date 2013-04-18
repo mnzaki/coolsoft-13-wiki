@@ -14,6 +14,6 @@ This is our wiki! A place to share the knowledge and document our efforts. So ed
 * [[Learning Resources]]
 * [[Bootstrap]]
 * [[Common Coding Errors]]
-
+* [[Painless Merge]]
 ## Components and Interfaces
 * [[Notification Module]]
