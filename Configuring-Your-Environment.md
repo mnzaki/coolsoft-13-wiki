@@ -112,6 +112,10 @@ This will automatically remove white space from your files when you save them. Y
 
 Now we'll install the `TrailingSpaces` plugin which will highlight any trailing space. In sublime, go to `Preferences -> Package Control`. Click on `Install Package`. Wait for it to load. Now type `TrailingSpaces` into the search box that appears and click on `TrailingSpaces` when it is filtered out. Wait for it to install (there's a progress indicator at the bottom left in the status bar). Once done, restart sublime.
 
+### Other Useful Sublime Plugins
+**AndyJS2**: Javascript and JQuery autocompletion  
+Add more!
+
 ## Ubuntu
 If you are clever enough to realize that life is much easier dealing with ruby and rails and development in general on Ubuntu, then kudos! And here's a few things you will want to set up after you install Ubuntu (specially if through wubi!)
 
