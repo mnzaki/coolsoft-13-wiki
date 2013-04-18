@@ -51,15 +51,18 @@ Git understands whitespace. An empty line (emphasis on *empty*; no spaces!) sign
 - NO spaces before a comma in an argument list  
     `object.bad_call arg1 , arg2` is **BAD**  
     `object.good_call arg1, arg2` is **GOOD**
-- Spaces around equal signs, comparisons, hash arrows:  
+- Spaces around equal signs, comparisons, hash arrows  
     `this=that` `this<that` `{this:"that"}` `{:this=>"that"}` is **BAD**  
-    `this = that` `this < that` `{ this: "that" }` `{ :this => "that" }` is **GOOD**
+    `this = that` `this < that` `{ this: "that" }` `{ :this => "that" }` is **GOOD**  
+- Spaces around curly braces for blocks  
+    `{|k| k.length}` is **BAD**  
+    `{ |k| k.length }` is **GOOD**  
 
 ### Some Ruby Style Conventions
 - snake_case_like_this for methods and variables
 - CamelCaseLikeThis for classes and modules
 - Use `unless ... end` instead of `if not ... end` except if there is an `else` branch.
-- Use `do |k, v| ... end` instead of `{|k, v| }` for multiline blocks
+- Use `do |k, v| ... end` instead of `{ |k, v| }` for multiline blocks
 - Avoid extra parentheses when calling methods, but keep them when you assign the return value.  
     `x = Math.sin(y)` but `array.delete e`
 - Avoid unnecessary parentheses when calling or defining methods that take no arguments.  
@@ -67,7 +70,7 @@ Git understands whitespace. An empty line (emphasis on *empty*; no spaces!) sign
 - Prefer single-quoted strings when you don't need string interpolation or special symbols.  
     Use single quotes `'like this'` if you don't use any escapes (like `\n`) or inline code (using `#{}`) or other escapes inside your string. If you need those, then you should use double quotes `"like this #{40+2}"` instead.
 
-You can read more here: https://github.com/copycopter/style-guide#ruby
+These are some necessary basics, but you can read more here: https://github.com/copycopter/style-guide#ruby
 
 ### Some Rails Style Conventions
 - Aim for skinny Controllers!
@@ -75,7 +78,7 @@ You can read more here: https://github.com/copycopter/style-guide#ruby
 - Order controller contents: filters, public methods, private methods.
 - Order model contents: constants, attributes, associations, nested attributes, named scopes, validations, callbacks, public methods, private methods.
 
-You can read more here: https://github.com/copycopter/style-guide#rails   
+These are some necessary basics, but you can read more here: https://github.com/copycopter/style-guide#rails   
 And here: https://github.com/bbatsov/rails-style-guide
 
 ## Documentation
