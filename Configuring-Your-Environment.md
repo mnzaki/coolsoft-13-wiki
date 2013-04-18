@@ -103,6 +103,14 @@ Now when you are editing any ruby file (including ERB!) all you have to do is pr
 
 **NOTE**: if you are on windows, look at this for setting up `BeautifyRuby` properly: https://github.com/CraigWilliams/BeautifyRuby#key-binding
 
+For Javascript and other kinds of files, you can use the builtin Sublime indentation. First place a shortcut for it. Go to `Preferences -> Key Bindings - User` and change it to:
+```
+[
+    { "keys": ["ctrl+shift+r"], "command": "reindent"}
+]
+```
+Now just select any section in any file you want to reindent and press `ctrl+shift+r` to reindent it.
+
 ### Whitespace
 In the Default Settings configuration again, `Ctrl-f` for `trailing_white_space` and make it:
 ```
