@@ -101,7 +101,7 @@ If there are no parameters, then your documentation should look like so:
 * Developers **MUST** be careful when drawing ALT and OPT blocks, they should cover only **_ONE_** vertical line, i.e one model/controller/helper/view
 * Developers **MUST** follow this convention for the component names, they should be **_View_** (and **NOT** UI), **_Helper_**, **_Controller_** or **_Model_**, and the corresponding component name should be clearly mentioned, e.g Model - IdeaModel
 * Developers **MUST** draw lines/transitions between components as follows, they are either solid/dashed lines and they **_MUST_** be labeled!
-* Extending number "5", Developers **MUST** return what's actually being requested between components, i.e if an Entity instance has been requested from a model, then the instance should be returned and **NOT** some of its attributes!
+* Extending previous point, Developers **MUST** return what's actually being requested between components, i.e if an Entity instance has been requested from a model, then the instance should be returned and **NOT** some of its attributes!
 
 ## Reviewing
 ### Code
