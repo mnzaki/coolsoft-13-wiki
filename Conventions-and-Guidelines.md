@@ -95,6 +95,14 @@ If there are no parameters, then your documentation should look like so:
 # Author: Your Name
 ```
 
+## Sequence Diagrams
+1. Developers **MUST** reflect the code sequence in the Sequence Diagram.
+2. Developers **MUST** be careful when the timelines end, i.e if a controller requests data from a model, then the model's timeline should end before the controller!
+3. Developers **MUST** be careful when drawing ALT and OPT blocks, they should cover only **_ONE_** vertical line, i.e one model/controller/helper/view
+4. Developers **MUST** follow this convention for the component names, they should be **_View_** (and **NOT** UI), **_Helper_**, **_Controller_** or **_Model_**, and the corresponding component name should be clearly mentioned, e.g Model - IdeaModel
+5. Developers **MUST** draw lines/transitions between components as follows, they are either solid/dashed lines and they **_MUST_** be labeled!
+6. Extending number "5", Developers **MUST** return what's actually being requested between components, i.e if an Entity instance has been requested from a model, then the instance should be returned and **NOT** some of its attributes!
+
 ## Reviewing
 ### Code
 Read the [Code Style and Conventions](Conventions-and-Guidelines#code-style-and-conventions) section above and make sure the developer has followed it closely. Your review should not be limited to just those things mentioned above.
@@ -117,10 +125,4 @@ Run the tests. Make sure no tests fail, even those that don't belong to the deve
 ### Documentation
 Read the [Documentation](Conventions-and-Guidelines#documentation) writing section above and make sure the developer has followed it closely; spaces, new lines, tags (`+param+::`), etc
 
-### UML (a.k.a "Sequence Diagrams")
-1. Reviewers **MUST** check the code described by the "sequence diagram", after all the UML should reflect the code sequence
-2. Reviewers **MUST** be careful when the timelines end, i.e if a controller requests data from a model, then the model's timeline should end before the controller!
-3. Reviewers **MUST** check ALT and OPT blocks, they should cover only **_ONE_** vertical line, i.e one model/controller/helper/view
-4. Reviewers **MUST** check the component names, they should be **_View_** (and **NOT** UI), **_Helper_**, **_Controller_** or **_Model_**, and the corresponding component name should be clearly mentioned, e.g Model - IdeaModel
-5. Reviewers **MUST** look carefully at lines/transitions between components, they are either solid/dashed lines and they **_MUST_** be labeled!
-6. Extending number "5", Reviewers **MUST** check what's actually requested between components and what's actually being returned, i.e if an Entity instance has been requested from a model, then the instance should be returned and **NOT** some of its attributes!
+### Sequence Diagrams (a.k.a "UML")
