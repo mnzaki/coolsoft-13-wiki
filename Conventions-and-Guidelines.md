@@ -57,9 +57,9 @@ Git understands whitespace. An empty line (emphasis on *empty*; no spaces!) sign
 - Spaces around curly braces for blocks  
     `{|k| k.length}` is **BAD**  
     `{ |k| k.length }` is **GOOD**  
-- Spaces around ERB tags
-    `<%end%>` `<%if something?%>` `<%=msg%>` is **BAD**
-    `<% end %>` `<% if something? %>` `<%= msg %>` is **GOOD**
+- Spaces around ERB tags  
+    `<%end%>` `<%if something?%>` `<%=msg%>` is **BAD**  
+    `<% end %>` `<% if something? %>` `<%= msg %>` is **GOOD**  
 - NO spaces around HTML tag attribute names and their equal signs  
     `<div id = 'unique' >` `<img src = 'bla.png' />` is **BAD**  
     `<div id='unique'>` `<img src='bla.png' />` is **GOOD**  
