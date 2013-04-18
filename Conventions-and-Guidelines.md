@@ -58,8 +58,11 @@ Git understands whitespace. An empty line (emphasis on *empty*; no spaces!) sign
     `{|k| k.length}` is **BAD**  
     `{ |k| k.length }` is **GOOD**  
 - Spaces around ERB tags
-    `<%end%>` `<%if something?%>` is **BAD**
-    `<% end %>` `<% if something? %>` is **GOOD**
+    `<%end%>` `<%if something?%>` `<%=msg%>` is **BAD**
+    `<% end %>` `<% if something? %>` `<%= msg %>` is **GOOD**
+- NO spaces around HTML tag attribute names and their equal signs  
+    `<div id = 'unique' >` `<img src = 'bla.png' />` is **BAD**  
+    `<div id='unique'>` `<img src='bla.png' />` is **GOOD**  
 
 ### Some Ruby Style Conventions
 - snake_case_like_this for methods and variables
