@@ -57,6 +57,9 @@ Git understands whitespace. An empty line (emphasis on *empty*; no spaces!) sign
 - Spaces around curly braces for blocks  
     `{|k| k.length}` is **BAD**  
     `{ |k| k.length }` is **GOOD**  
+- Spaces around ERB tags
+    `<%end%>` `<%if something?%>` is **BAD**
+    `<% end %>` `<% if something? %>` is **GOOD**
 
 ### Some Ruby Style Conventions
 - snake_case_like_this for methods and variables
