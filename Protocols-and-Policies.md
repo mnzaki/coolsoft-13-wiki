@@ -7,8 +7,9 @@
 1. A reviewer MUST, and only a reviewer CAN, change the issue labels to the appropriate `-reopen` or `-verified` labels after finishing reviewing.
 1. All issue discussion SHOULD happen on the issue and not the pull request except for inline comments.
 1. All label changes MUST be announced in issue comments.
-
-Follow the protocol for guaranteed smooth sailing.
+1. A reviewer MUST follow the appropriate [Reviewing Guidelines](https://github.com/DevYah/coolsoft-13/wiki/Conventions-and-Guidelines#reviewing)
+    - A code reviewer MUST ensure that code is up to the [Code Standard](https://github.com/DevYah/coolsoft-13/wiki/Conventions-and-Guidelines#code-style-and-conventions) and does not contain any [Common Errors](https://github.com/DevYah/coolsoft-13/wiki/Common-Coding-Errors)
+    - A documentation reviewer MUST ensure that documentation follows the [Standard](https://github.com/DevYah/coolsoft-13/wiki/Conventions-and-Guidelines#documentation) closely.
 
 ## Standup Meetings
 1. All developers MUST push their branches before starting the standup meeting.
