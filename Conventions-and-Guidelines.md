@@ -96,12 +96,12 @@ If there are no parameters, then your documentation should look like so:
 ```
 
 ## Sequence Diagrams
-1. Developers **MUST** reflect the code sequence in the Sequence Diagram.
-2. Developers **MUST** be careful when the timelines end, i.e if a controller requests data from a model, then the model's timeline should end before the controller!
-3. Developers **MUST** be careful when drawing ALT and OPT blocks, they should cover only **_ONE_** vertical line, i.e one model/controller/helper/view
-4. Developers **MUST** follow this convention for the component names, they should be **_View_** (and **NOT** UI), **_Helper_**, **_Controller_** or **_Model_**, and the corresponding component name should be clearly mentioned, e.g Model - IdeaModel
-5. Developers **MUST** draw lines/transitions between components as follows, they are either solid/dashed lines and they **_MUST_** be labeled!
-6. Extending number "5", Developers **MUST** return what's actually being requested between components, i.e if an Entity instance has been requested from a model, then the instance should be returned and **NOT** some of its attributes!
+* Developers **MUST** reflect the code sequence in the Sequence Diagram.
+* Developers **MUST** be careful when the timelines end, i.e if a controller requests data from a model, then the model's timeline should end before the controller!
+* Developers **MUST** be careful when drawing ALT and OPT blocks, they should cover only **_ONE_** vertical line, i.e one model/controller/helper/view
+* Developers **MUST** follow this convention for the component names, they should be **_View_** (and **NOT** UI), **_Helper_**, **_Controller_** or **_Model_**, and the corresponding component name should be clearly mentioned, e.g Model - IdeaModel
+* Developers **MUST** draw lines/transitions between components as follows, they are either solid/dashed lines and they **_MUST_** be labeled!
+* Extending number "5", Developers **MUST** return what's actually being requested between components, i.e if an Entity instance has been requested from a model, then the instance should be returned and **NOT** some of its attributes!
 
 ## Reviewing
 ### Code
@@ -126,3 +126,4 @@ Run the tests. Make sure no tests fail, even those that don't belong to the deve
 Read the [Documentation](Conventions-and-Guidelines#documentation) writing section above and make sure the developer has followed it closely; spaces, new lines, tags (`+param+::`), etc
 
 ### Sequence Diagrams (a.k.a "UML")
+Make sure the developer has followed the [Sequence Diagrams Guidelines](Conventions-and-Guidelines#sequence-diagrams) section above, especially for first the point! After all, a Sequence Diagram, must show the code SEQUENCE!
