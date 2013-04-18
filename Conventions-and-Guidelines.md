@@ -44,7 +44,7 @@ Git understands whitespace. An empty line (emphasis on *empty*; no spaces!) sign
 
 - One and only one empty line after a block of requires/includes and before a new `def` or `class`.
 - One and only one empty line after the beginning of a `class` and before its `end`
-- One and only one empty line between method `def`initions.
+- One and only one empty line between method `def`inition blocks. This means an empty line after the `end` and before a new `def`.
 - One and only one empty line between separate 'blocks' of code inside a method.
 - NO useless spaces at the end of the line! [FOLLOW THESE INSTRUCTIONS](https://github.com/DevYah/coolsoft-13/wiki/Configuring-Your-Environment#configuring-sublime)
 - NO useless newlines at the end of the file!
