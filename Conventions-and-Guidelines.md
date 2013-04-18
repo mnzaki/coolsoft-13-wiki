@@ -118,9 +118,9 @@ Run the tests. Make sure no tests fail, even those that don't belong to the deve
 Read the [Documentation](Conventions-and-Guidelines#documentation) writing section above and make sure the developer has followed it closely; spaces, new lines, tags (`+param+::`), etc
 
 ### UML (a.k.a "Sequence Diagrams")
-1- Reviewers **MUST** check the code described by the "sequence diagram", after all the UML should reflect the code sequence
-2- Reviewers **MUST** be careful when the timelines end, i.e if a controller requests data from a model, then the model's timeline should end before the controller!
-3- Reviewers **MUST** check ALT and OPT blocks, they should cover only **_ONE_** vertical line, i.e one model/controller/helper/view
-4- Reviewers **MUST** check the component names, they should be <<view>>, <<helper>>, <<controller>> or <<model>>
-5- Reviewers **MUST** look carefully at lines/transitions between components, they are either solid/dashed lines and they **_MUST_** be labeled!
-6- Extending number "5", Reviewers **MUST** check what's actually requested between components and what's actually being returned, i.e if an Entity instance has been requested from a model, then the instance should be returned and **NOT** some of its attributes!
+1. Reviewers **MUST** check the code described by the "sequence diagram", after all the UML should reflect the code sequence
+2. Reviewers **MUST** be careful when the timelines end, i.e if a controller requests data from a model, then the model's timeline should end before the controller!
+3. Reviewers **MUST** check ALT and OPT blocks, they should cover only **_ONE_** vertical line, i.e one model/controller/helper/view
+4. Reviewers **MUST** check the component names, they should be **_View_** (and **NOT** UI), **_Helper_**, **_Controller_** or **_Model_**, and the corresponding component name should be clearly mentioned, e.g Model - IdeaModel
+5. Reviewers **MUST** look carefully at lines/transitions between components, they are either solid/dashed lines and they **_MUST_** be labeled!
+6. Extending number "5", Reviewers **MUST** check what's actually requested between components and what's actually being returned, i.e if an Entity instance has been requested from a model, then the instance should be returned and **NOT** some of its attributes!
