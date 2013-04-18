@@ -99,6 +99,8 @@ sudo gem install htmlbeautifier
 
 Now in sublime, go to `Preferences -> Package Control`. Click on `Install Package`. Wait for it to load. Now type `BeautifyRuby` into the search box that appears and click on `BeautifyRuby` when it is filtered out. Wait for it to install (there's a progress indicator at the bottom left in the status bar). Once done, restart sublime.
 
+Repeat this process for the `Sass` Sublime plugin, to get full highlighting and indentation for `.css.scss` (sass) files.
+
 Now when you are editing any ruby file (including ERB!) all you have to do is press `Ctrl-Alt-k` or `Ctrl-Cmd-k` on Mac OS and all your ruby gets formatted beautifully!
 
 **NOTE**: if you are on windows, look at this for setting up `BeautifyRuby` properly: https://github.com/CraigWilliams/BeautifyRuby#key-binding
@@ -122,6 +124,7 @@ Now we'll install the `TrailingSpaces` plugin which will highlight any trailing 
 
 ### Other Useful Sublime Plugins
 **AndyJS2**: Javascript and JQuery autocompletion  
+**Sass**: Support for Sass highlighting, completion, and indenting  
 Add more!
 
 ## Ubuntu
