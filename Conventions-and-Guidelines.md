@@ -42,7 +42,7 @@ You can setup sublime to show and fix whitespace and indentation errors by follo
 ### Whitespace
 Git understands whitespace. An empty line (emphasis on *empty*; no spaces!) signifies the beginning of a new 'block' of text to git. Git can automerge blocks of text no problem. Help Git help You by separating your blocks with empty lines!
 
-- One and only one empty line after all the requires at the top of a class file and the before the beginning of the `class` definition.
+- One and only one empty line after a block of requires/includes and before a new `def` or `class`.
 - One and only one empty line after the beginning of a `class` and before its `end`
 - One and only one empty line between method `def`initions.
 - One and only one empty line between separate 'blocks' of code inside a method.
