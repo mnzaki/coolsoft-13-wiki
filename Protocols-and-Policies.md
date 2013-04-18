@@ -27,7 +27,7 @@
 1. A pull request for a branch SHALL ONLY be made once the branch is ready to be at least scenario and code reviewed.
 1. A pull request description MUST reference the issue(s) that it addresses and the reviewers that are expected to review.
 1. A pull request MUST be mergeable to start with. The last commit in a pull request MUST be a merge master commit, unless master has not been updated since the last merge.
-1. A pull request WILL be accepted/merged by the last reviewer to verify the pull request.
+1. A pull request MUST be accepted/merged by the last reviewer to verify the pull request.
 
 ### Topic Branches 
 1. There MAY be topic branches that compromise no more than 4 issues each which would conflict with each other otherwise.
