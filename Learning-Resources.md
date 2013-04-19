@@ -5,6 +5,8 @@
 ### Rails
 *The Guides* are THE reference for all your rails needs. Some important things:
 
+* ***AJAX and Unobtrustive Javascript***: <http://net.tutsplus.com/tutorials/javascript-ajax/using-unobtrusive-javascript-and-ajax-with-rails-3/>    
+Making and handling AJAX requests
 * ***Routing***: <http://guides.rubyonrails.org/routing.html>  
 How rails figures out which controller and which method to call based on the URL; and how you can instruct it to call your methods.
 * ***Layouts and Rendering***: <http://guides.rubyonrails.org/layouts_and_rendering.html>  
