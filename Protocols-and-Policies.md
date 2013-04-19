@@ -6,7 +6,6 @@
 1. A reviewer MAY or MAY NOT reply to a review request made **less than 6 hours** before a submission deadline.
 1. A reviewer MUST, and only a reviewer CAN, change the issue labels to the appropriate `-reopen` or `-verified` labels after finishing reviewing.
 1. All issue discussion SHOULD happen on the issue and not the pull request except for inline comments.
-1. In case of the inline comments mentioned above the reviewer MUST inform the developer on the issue page of their existence.
 1. All label changes MUST be announced in issue comments.
 1. A reviewer MUST follow the appropriate [Reviewing Guidelines](https://github.com/DevYah/coolsoft-13/wiki/Conventions-and-Guidelines#reviewing)
     - A code reviewer MUST ensure that code is up to the [Code Standard](https://github.com/DevYah/coolsoft-13/wiki/Conventions-and-Guidelines#code-style-and-conventions) and does not contain any [Common Errors](https://github.com/DevYah/coolsoft-13/wiki/Common-Coding-Errors)
