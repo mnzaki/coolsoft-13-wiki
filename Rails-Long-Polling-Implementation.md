@@ -11,4 +11,4 @@ Basically the client sends a request to the server (with a huge timeout), then t
 The basic idea was to build a small app and have users use long polling to request any updates in the current page from this app. Then the app sends the users information to our main server which are stored in memory their so whenever an update related to those users is triggered the main server sends this update to our small app to update the users doing the long polling. We called our new app Coolster and the main app is Idearator.
 
 **Building the app:**    
-Coolster was built using [Thin](http://code.macournoyer.com/thin/) as our server and [sinatra](http://www.sinatrarb.com/) as our framework.
+Coolster was built using [Thin](http://code.macournoyer.com/thin/) as a server and [sinatra](http://www.sinatrarb.com/) as a framework.
