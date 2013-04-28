@@ -22,4 +22,7 @@ The difference between our implementation and the one in the article is how gett
 Coolster was built using [Thin](http://code.macournoyer.com/thin/) as a server and [sinatra](http://www.sinatrarb.com/) as a framework.
 
 **Resources:**  
-1. [ Jordan Hollinger's article](http://jordanhollinger.com/2011/05/15/writing-an-ajax-long-polling-server-in-ruby-part-1).
+1. [ Jordan Hollinger's article](http://jordanhollinger.com/2011/05/15/writing-an-ajax-long-polling-server-in-ruby-part-1).  
+2. [Rack](http://ruby.about.com/od/rack/a/What-Is-Rack.htm)  
+3. [Warden](https://github.com/hassox/warden/wiki/overview)  
+4. [Sinatra + Warden & Rails + Devise](http://labnote.beedesk.com/sinatra-warden-rails-devise)
