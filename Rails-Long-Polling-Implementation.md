@@ -19,8 +19,13 @@ The basic idea was to build a small app and have users use long polling to reque
 The difference between our implementation and the one in the article is how getting updates from the main server is handled. We won't be using short polling to get updates from the main server instead the server sends a request to the small app whenever a change occurs. 
 
 **Building the app:**    
-Coolster was built using [Thin](http://code.macournoyer.com/thin/) as a server and [sinatra](http://www.sinatrarb.com/) as a framework.
-
+Coolster was built using [Thin](http://code.macournoyer.com/thin/) as a server and [sinatra](http://www.sinatrarb.com/) as a framework.  
+1. conig.ru  
+2. coolster_app:  
+* aget /poll
+* apost /push
+* apost /push_to_all
+* apost /push_to_each
 **Resources:**  
 1. [ Jordan Hollinger's article](http://jordanhollinger.com/2011/05/15/writing-an-ajax-long-polling-server-in-ruby-part-1).  
 2. [Rack](http://ruby.about.com/od/rack/a/What-Is-Rack.htm)  
