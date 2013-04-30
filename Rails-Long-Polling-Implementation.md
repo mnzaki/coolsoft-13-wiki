@@ -25,7 +25,8 @@ Coolster was built using [Thin](http://code.macournoyer.com/thin/) as a server a
 * aget /poll
 * apost /push
 * apost /push_to_all
-* apost /push_to_each
+* apost /push_to_each  
+  
 **Resources:**  
 1. [ Jordan Hollinger's article](http://jordanhollinger.com/2011/05/15/writing-an-ajax-long-polling-server-in-ruby-part-1).  
 2. [Rack](http://ruby.about.com/od/rack/a/What-Is-Rack.htm)  
