@@ -80,7 +80,7 @@ These are some necessary basics, but you can read more here: https://github.com/
 
 ### Some Rails Style Conventions
 - Aim for skinny Controllers!
-    All business login goes into the Model. The controller should simply `find` or `create` an object, perhaps load some other data or call a Model method, then pass everything to the view.
+    All business logic goes into the Model. The controller should simply `find` or `create` an object, perhaps load some other data or call a Model method, then pass everything to the view.
 - Order controller contents: filters, public methods, private methods.
 - Order model contents: constants, attributes, associations, nested attributes, named scopes, validations, callbacks, public methods, private methods.
 
@@ -136,4 +136,4 @@ Run the tests. Make sure no tests fail, even those that don't belong to the deve
 Read the [Documentation](Conventions-and-Guidelines#documentation) writing section above and make sure the developer has followed it closely; spaces, new lines, tags (`+param+::`), etc
 
 ### Sequence Diagrams (a.k.a "UML")
-Make sure the developer has followed the [Sequence Diagrams Guidelines](Conventions-and-Guidelines#sequence-diagrams) section above, especially for first the point! After all, a Sequence Diagram, must show the code SEQUENCE!
+Make sure the developer has followed the [Sequence Diagrams Guidelines](Conventions-and-Guidelines#sequence-diagrams) section above, especially for first the point! After all a Sequence Diagram must show the code SEQUENCE!
