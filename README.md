@@ -13,6 +13,9 @@ and is thus maintained here for more than just posterity reasons. As such I
 request that changes and additions be contributed back to this repository via
 pull-requests.
 
+Some pages (few) were specific to our project at that time and are only left
+there for sentimental reasons.
+
 ## Contributing
 This repo itself is a mirror of its own wiki repo. Fork this repository, make
 your changes, then pull request. I will accept pull requests and push the
