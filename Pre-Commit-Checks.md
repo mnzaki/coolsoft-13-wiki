@@ -1,7 +1,9 @@
 Git has a hooking system that can be exploited for fun and profit.
 
 ## Background and Warning
-<b>WARNING: this is HIGHLY experimental. No warranties. I am not responsible for any damages, emotional or otherwise, directly or indirectly caused by following this guide</b> 
+<b>WARNING: this is HIGHLY experimental. No warranties. I am not responsible for any damages, emotional or otherwise, directly or indirectly caused by following this guide.</b> 
+
+<b>Field testing has revealed that this will in fact cause more problems and frustrations than is acceptable.</b>
 
 The hook we are interested in is the pre-commit hook. Git allows us to do whatever we want and then tell it whether or not this commit can be made. We will use this to check if the commit is clean and up to standards. We will use a gem called `pre-commit` that applies pre-commit checks, and a gem called `rubocop` that applies ruby style checks.
 
